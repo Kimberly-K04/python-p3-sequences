@@ -1,4 +1,13 @@
-#!/usr/bin/env python3
+def print_fibonacci(n):
+    fib = []
 
-def print_fibonacci(length):
-    pass
+    if n <= 0:
+        print(fib)
+        return
+
+    a, b = 0, 1
+    for _ in range(n):
+        fib.append(a)
+        a, b = b, a + b
+
+    print(fib)
